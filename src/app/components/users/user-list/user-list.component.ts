@@ -14,6 +14,9 @@ constructor() { }
   ngOnInit(): void {
   }
 
+pickThisUser(user: IUser){
 
-
+  }
 }
+
+

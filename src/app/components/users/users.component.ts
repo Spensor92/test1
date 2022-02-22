@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { IUser } from './mockback/mockbackend.service';
 @Component({
   selector: 'app-users',
