@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { IUser } from './user.types';
+import { IUser } from '../user.types';
 
 @Component({
   selector: 'app-user-list',
@@ -7,14 +7,9 @@ import { IUser } from './user.types';
   styleUrls: ['./user-list.component.css']
 })
 export class UserListComponent implements OnInit {
+  @Input() users: IUser[];
 
-
-
-  @Input() users: IUser;
-
-
-
-  constructor() { }
+constructor() { }
 
   ngOnInit(): void {
   }

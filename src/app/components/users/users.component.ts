@@ -7,7 +7,7 @@ import { IUser } from './mockback/mockbackend.service';
 })
 export class UsersComponent implements OnInit {
 
-  private users: IUser[] = [
+  users: IUser[] = [
     {
       id: 1,
       name: 'John',
