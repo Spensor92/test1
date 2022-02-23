@@ -7,6 +7,8 @@ import { IUser } from './mockback/mockbackend.service';
 })
 export class UsersComponent implements OnInit {
 
+public selectedUser: any ;
+
   users: IUser[] = [
     {
       id: 1,

@@ -1,1 +1,5 @@
-<app-user-list [users]="users"></app-user-list>
+<div *ngFor="let user of users">
+    <app-user-list [users]="users" (userSelected)="selectedUser = user"></app-user-list>
+</div>
+
+<h1>{{selectedUser}}</h1>

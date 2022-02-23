@@ -1,3 +1,2 @@
 <div *ngFor="let user of users">
-    {{user.name}} {{user.surname}}
-</div>
+    <p (click)="selectUser()"> {{user.name}} {{user.surname}}</p>
