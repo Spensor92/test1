@@ -1,2 +1,5 @@
-<div *ngFor="let user of users">
-    <p (click)="selectUser()"> {{user.name}} {{user.surname}}</p>
+<div class="user-list-container">
+    <span class="borders" *ngFor="let user of users" (click)="selectUser(user)" [ngClass]="{ 'active': user.isSelected}">
+      {{user.name}} {{user.surname}}
+    </span>
+</div>

@@ -1,0 +1,26 @@
+:host {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    border-left: 1px solid black;
+}
+
+.user-details {
+    border-right: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: rgb(2, 139, 6);
+}
+
+.empty-state {
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.fonts {
+    padding: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

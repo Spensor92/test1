@@ -1,5 +1,5 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { IUser } from './mockback/mockbackend.service';
+import { Component, EventEmitter, Input, OnInit } from '@angular/core';
+import { IUser } from './user.types';
 @Component({
   selector: 'app-users',
   templateUrl: './users.component.html',
@@ -46,10 +46,14 @@ public selectedUser: any ;
       phone: '0665553344',
       hasCar: true
     }
+
   ];
 
 
 
+onUserSelected(user: IUser): void {
+this.selectedUser = user;
+}
 
 
 

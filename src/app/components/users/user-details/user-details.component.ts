@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { IUser } from '../user.types';
 
 @Component({
   selector: 'app-user-details',
@@ -6,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./user-details.component.css']
 })
 export class UserDetailsComponent implements OnInit {
+
+@Input() selectedUser: IUser;
+
+changeBooleanName (hasCar: boolean) {
+  if (hasCar === true) {
+    return 'Yes'} else { return 'No'}
+}
 
   constructor() { }
 

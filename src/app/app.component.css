@@ -1,0 +1,13 @@
+.headname {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: bold;
+    background: rgba(149, 149, 150, 0.999);
+    border-bottom: 1px solid black;
+    -webkit-background-clip: text;
+    background-clip: content-box;
+}
+
+.background {
+    background: url(../assets/img/gems.jpg)
+}
